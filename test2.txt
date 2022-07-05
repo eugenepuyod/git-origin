@@ -1,2 +1,2 @@
 This is sample tests
-This is sample test
+This is sample tests
