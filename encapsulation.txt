@@ -1,4 +1,4 @@
-Incapsulation:
+Encapsulation:
 
 public class Main {
   public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class Main {
 
 
 pulic class Account {
-  private float balance; // Incapsulation
+  private float balance; // Encapsulation
 
   public void deposit(float amount) {
     if(amount > 0) {
