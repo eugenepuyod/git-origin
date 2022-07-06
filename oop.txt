@@ -3,7 +3,9 @@ Incapsulation:
 public class Main {
   public static void main(String[] args) {
     var account = new Account();
-    account.balance = -1;
+    account.deposit(amount:10);
+    account.withdraw(amount:5);
+    System.out.println(account.getBalance());
   }
 
 }
