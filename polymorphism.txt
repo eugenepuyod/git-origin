@@ -1,0 +1,32 @@
+// Polymorphism is an object-oriented programming concept that refers to the ability of a variable, function or object to take on multiple forms
+
+public class Main {
+    public static void main(String[] args) {
+        // This is a polymorphism in action can take on many different form
+        drawUIControl(new TextBox()); // return drawing a textbox // Polymorphism
+        drawUIControl(new CheckBox()); // return drawing a checkbox // Polymorphism
+    }
+    // It can behave many different form: a checkbox, textbox
+    public static void drawUIControl(UIContorl control) { // UIContorl is the parent of checkbox class
+        control.draw(); // a constructor in Polymorphism
+    }
+}
+
+public abstract class UIControl { // Polymorphism by adding abstract
+
+    public abstract void draw(); // Polymorphism by adding abstract
+}
+
+public class TextBox extends UIControl { // Many forms
+    @Override
+    public void draw() {
+        System.out.println("Drawing a textbox")
+    }
+}
+
+public class CheckBox extends UIContorl { // Many Forms
+    @Override
+    public void draw() {
+        System.out.println("Drawing a checkbox")
+    }
+}
