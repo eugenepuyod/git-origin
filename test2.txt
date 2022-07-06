@@ -1,4 +1,0 @@
-This is sample tests
-This is sample tests
-Hello World
-This is sample text message
