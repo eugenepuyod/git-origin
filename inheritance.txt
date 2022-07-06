@@ -1,0 +1,19 @@
+// Inhiritance is a mechanism where you can to derive a class from another class for a hierarchy of classes that share a set of attributes and methods
+
+public class Main {
+    public static void main(String[] args) {
+        var TextBox = new TextBox();
+        TextBox.enabled(); // Inhiritance
+
+    }
+}
+
+public class UIControl {
+    public void enable() {
+        System.out.println("enabled");
+    }
+}
+
+public class TextBox extends UIControl { // Inhiritance by extending object from UIContorl class
+
+}
