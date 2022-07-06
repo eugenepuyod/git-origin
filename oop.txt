@@ -11,7 +11,7 @@ public class Main {
 
 
 pulic class Account {
-  private float balance;
+  private float balance; // Incapsulation
 
   public void deposit(float amount) {
     if(amount > 0) {
@@ -26,13 +26,13 @@ pulic class Account {
     }
   }
 
-  public void setBalance(float balance) {
+  public void setBalance(float balance) { // Setter
     if(balance > 0) {
       this.balance = balance;
     }
   }
 
-  public float getBalance() {
+  public float getBalance() { // Getter
     return balance;
   }
 }
