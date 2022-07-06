@@ -1,0 +1,30 @@
+// Abstraction to reduce complexity by hiding unnecessary details
+
+public class Main {
+    public static void main(String[] args) {
+        var mailService = new MailService();
+        mailService.sendEmail(); // abstraction
+    }
+}
+
+
+public class MailService {
+    public void sendEmail() { // show abstraction
+        connect(timeout: 1);
+        authenticate();
+        // Send email
+        disconnect();
+    }
+
+    private void connect(int timeout) { // hiding in abstraction
+        System.out.println("Connect");
+    }
+
+    private void disconnect() { // hiding in abstraction
+        System.out.println("Disconnect");
+    }
+
+    private void authenticate() { // hiding in abstraction
+        System.out.println("Authenticate");
+    }
+}
