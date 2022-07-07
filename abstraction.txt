@@ -1,5 +1,6 @@
 // Abstraction to reduce complexity by hiding unnecessary detail
 //
+
 public class Main {
     public static void main(String[] args) {
         var mailService = new MailService();
